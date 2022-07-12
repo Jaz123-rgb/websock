@@ -27,15 +27,30 @@ io.on('connection', (socket) => {
       const note = {...newNote, id: uuid()}
       console.log(note);
         notes.push(note);
-        socket.emit('server:newnote', note);
+        io.emit('server:newnote', note);
     });
 
     socket.on('client:deletenote', (noteId) => {
         notes = notes.filter((note) => note.id !== noteId)
 
-        socket.emit('server:loadnotes', notes)
+        io.emit('server:loadnotes', notes)
     });
-    
+
+    socket.on('client:getnote', noteid =>{
+      const note = notes.find(note => note.id === noteid) 
+      socket.emit('server:selectednote', note)
+    })
+
+    socket.on('client:updatenote', updatedNote =>{
+        notes = notes.map(note => {
+            if(note.id === updatedNote.id){
+               note.title = updatedNote.title
+               note.description = updatedNote.description
+            }
+            return note
+        })
+        io.emit('server:loadnotes', notes)
+    })
 });
  
 server.listen(port);
