@@ -1,0 +1,109 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3{
+    margin: 0;
+    padding: 0rem;
+}
+
+.radius-1{
+    border-radius: 1rem!important;
+}
+
+.formulario{
+    background-color: rgba(7, 21, 82, 0.13);
+    width: 50%;
+    margin: 7% auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.formulario input{
+    margin: .5rem;
+}
+
+.container1{
+    background-color: rgba(3, 49, 49, 0.589);
+    margin-top: 5rem;
+    margin: 1rem;
+}
+
+.ins{
+    display: flex;
+    align-items: center;
+}
+
+.fa{
+    background-color: antiquewhite;
+    padding: 1.4rem;
+}
+
+.container2{
+    display: flex!;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.swiper{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.swiper img{
+    padding-left: 1px;
+    width: 100%;
+}
+
+
+#debug{
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+    width: 700px;
+    background: lightyellow;
+    border: 1px solid #333; 
+    font: 20px/30px Verdana;
+}
+
+.dj-banner{
+    margin: 0px 0; 
+    position: relative;
+  }
+ .dj-banner .dj-bg{
+     width: 100%;
+  }
+ .dj-banner .dj-text{
+     text-align: center; 
+     padding-bottom: 20px;
+  }
+ @media screen and (min-width:768px){
+  .dj-banner .dj-bg img{
+        margin-right: 100px;
+      }
+  .dj-banner .dj-text{
+        position: absolute;  
+        text-align: center;
+      }
+
+.dj-banner .dj-text h1{
+            font-size: calc(2*1.5vw);
+            color: #526ec7;
+            border: crimson;
+  }
+.dj-banner .dj-text p{
+  font-size: calc(1.2*1.5vw);
+
+}
+ }
+
+ .navna{
+    display: flex;
+    flex-direction: row;
+ }
