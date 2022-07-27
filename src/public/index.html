@@ -10,16 +10,24 @@
 
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="shortcut icon" href="../public/img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./estilos.css">
     <link rel="stylesheet" href="./swiper-bundle.css">
     <link rel="stylesheet" href="./swiper.min.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <script src="jquery-3.6.js"></script>
-    <title>Crud web sockets</title>
+    <title>Intranet</title>
 </head>
 <body>
+    <!--! div principal inicio -->
+    <div class="row">
+    <!--! div principal inicio -->
+    
+    <!--* div principal final -->
+    </div>
+    <!--* div principal final -->
     <!--?Aqui programas perro tonto s-->
-     
+    
 
      <!--? div class="container">-->
       <!--! No necesitamos un menu de navegacion poruque esta sera la pagina principal by JazzTeddy -->
@@ -27,16 +35,16 @@
     
 
 
-	<div class="row">
+	<div class="col-md-12">
 			<hr>    
         <section class="news">
             <div class="banner1">
-                <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events">
+                <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events" style="overflow: hidden;">
                     <div class="swiper-wrapper" id="swiper-wrapper-3a5e8f8a44f67439" aria-live="off" style="transition-duration: 1000ms; transform: translate3d(-6980px, 0px, 0px);">
                             <div class="swiper-slide" role="group" aria-label="1 / 9" style="width: 1366px; margin-right: 350px;">
                                 <div class="dj-banner">
                                     <div class="dj-bg">
-                                        <img src="./img/img-slide-1.png" alt="QUEPDO">
+                                        <img src="./img/img-slide-3.png" alt="QUEPDO">
                                         <div class="dj-text" style="top: 150px;">
                                             <h1><b></b></h1>
                                             <p><span></span></p>
@@ -56,7 +64,7 @@
                             <div class="swiper-slide" role="group" aria-label="3 / 9" style="width: 1366px; margin-right: 350px;">
                             <div class="dj-banner">
                                 <div class="dj-bg">
-                                    <img src="./img/sl3.jpg" alt="sanson" height="auto">
+                                    <img src="./img/img-slide-1.png" alt="sanson" height="auto">
                                     <div class="dj-text" style="left: 0px;">
                                         <h1><b>Sanson:</b></h1>
                                         <p><span> Ideales para el hogar y los negocios</span></p>
@@ -68,11 +76,7 @@
                         <div class="swiper-slide" role="group" aria-label="4 / 9" style="width: 1366px; margin-right: 350px;">
                             <div class="dj-banner">
                                 <div class="dj-bg">
-                                    <img src="./Files/fotos_casos.jpg" alt="" height="auto">
-                                    <div class="dj-text">
-                                        <h1><b>Los resultados son indiscutibles:</b></h1>
-                                        <p style="color: aliceblue; background-color: #1e73be; width: 80%;">Somos líderes del mercado de bolsas para la basura.</span></p>
-                                    </div>
+                                    <img src="./img/img-slide-4.png" alt="" height="auto">
                                 </div>            
                             </div>
                             
@@ -88,6 +92,52 @@
             </div>
         </section>
     </div>
+
+    <!--? div principal final -->
+    </div>
+    <!--? div principal final -->
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card text-start">
+              <img class="card-img-top" src="./img/icon.png" alt="Title">
+              <div class="card-body">
+                <h4 class="card-title">Informacion General</h4>
+                <p class="card-text">
+                    <h3>
+                        La empresa Mountain se encarga de crear una escalabilidad de la empresa  
+                    </h3>
+
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="holder.js/100x180/" alt="Title">
+                <div class="card-body">
+                    <h4 class="card-title">YO soy una noticia</h4>
+                    <p class="card-text">
+                    <div class="row"> 
+
+                       <div class="col-md-6">
+                         YO soy una el texto de una noticia
+                            asdasdasda
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./img/icon.png" class="img-fluid rounded-top" alt="">
+                        </div>
+
+                    </div>
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
     <div class="container h-100">
         <!--! Aqui termina el add note -->
         <div class="col-md-8 py-3">
@@ -98,7 +148,7 @@
             <div class="col-md-4 my-auto">
                 <form class="card card-body rounded-0" id="noteForm">
 
-                    <h1 class="h3 mb-5">Add a little notes</h1>
+                    <h1 class="h3 mb-5">Add a new notification</h1>
 
                     <input type="text", id="title" name="title" placeholder=" write a title" class="form-control rounded-0 mb-3" autofocus/>
 
@@ -109,6 +159,7 @@
         </div>
 
     </div>
+
     
     <script src="./swiper.min.js"></script>		
     <script>
