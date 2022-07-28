@@ -16,7 +16,7 @@ const io = new WebSocketServer(server);
 const port = 3000; 
 
 //? manejamos rutas de la siguiente forma
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/login'));
 
 io.on('connection', (socket) => {
     console.log('new connection:', socket.id);
