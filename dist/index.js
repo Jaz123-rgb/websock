@@ -25,7 +25,7 @@ var server = _http["default"].createServer(app); //! io conexact el ser idor con
 var io = new _socket.Server(server);
 var port = 3000; //? manejamos rutas de la siguiente forma
 
-app.use(_express["default"]["static"](__dirname + '/public'));
+app.use(_express["default"]["static"](__dirname + '/public/login'));
 io.on('connection', function (socket) {
   console.log('new connection:', socket.id);
   socket.emit('server:loadnotes', notes);
